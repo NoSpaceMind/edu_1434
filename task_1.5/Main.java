@@ -2,7 +2,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int tempС = scan.nextInt();
+        System.out.println("Какова сейчас температура в градусах Цельсия ???" );
+        double tempС = scan.nextDouble();
         double tempF = (9.0/5) * tempС + 32;
         System.out.println("В градусах Фаренгейта: " + tempF);
     }
