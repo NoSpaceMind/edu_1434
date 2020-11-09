@@ -10,7 +10,7 @@ public class Main {
             mult = mult + num[i];
             int element = i + 1;
             if (mult > 10) {
-                System.out.println("Понадобилось " + element + " эллементов массива. Сумма больше 10");
+                System.out.println("Понадобилось " + element + " элементов массива. Сумма больше 10");
                 break;
             }
         }
