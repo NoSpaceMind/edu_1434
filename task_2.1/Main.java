@@ -14,11 +14,23 @@
 public class Main {
     public static void main(String[] args) {
         String twister[] = {"Мама","Мыла","Раму"};
-        System.out.println(twister[0]+twister[1]+twister[2]);
-        System.out.println(twister[0]+twister[2]+twister[1]);
-        System.out.println(twister[1]+twister[0]+twister[2]);
-        System.out.println(twister[1]+twister[2]+twister[0]);
-        System.out.println(twister[2]+twister[0]+twister[1]);
-        System.out.println(twister[2]+twister[1]+twister[2]);
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                for (int k = 0; k < 3; k++) {
+
+                    if (i==j)
+                        continue;
+                        if (j==k)
+                            continue;
+                            if (k==i)
+                                continue;
+                    System.out.print(twister[i]);
+                    System.out.print(twister[j]);
+                    System.out.print(twister[k]);
+                    System.out.println();
+                }
+            }
+        }
     }
 }
