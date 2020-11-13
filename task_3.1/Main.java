@@ -12,9 +12,8 @@ public class Main {
     public static int min(int a, int b, int c) {
         int num[] = { a, b, c };
         int min = num[0];
-        for (int i = 1; i < num.length; i++) {
-            if (min > num[i]) min = num[i];
-        }
+        if (min > num[1]&&min > num[2]) min = num[2];
+        if (min > num[1]) min = num[1];
         return min;
     }
 
