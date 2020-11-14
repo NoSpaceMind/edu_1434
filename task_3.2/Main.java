@@ -17,10 +17,13 @@ public class Main {
 
     public static int min(int a, int b, int c, int d) {
         int num[] = { a, b, c, d };
-        int min = num[0];
-        for (int i = 1; i < num.length; i++) {
-            if (min > num[i]) min = num[i];
-        }
+        int min = num[2];
+        int x = min( a, b );
+
+        if ((x > num[2] && num[2] > num[3])
+                ||(num[2] > x && x > num[3])) min = num[3];
+        else if (x > num[2]) min = num[2];
+        else min = x;
         return min;
     }
 
