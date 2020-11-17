@@ -29,6 +29,6 @@ class Horse extends Animal{
     public void run(){ System.out.println("Игого, я поскакал(а)"); }
 }
 
-class Pegasus extends Animal{
+class Pegasus extends Horse{
     public void fly(){ System.out.println("Игого, я полетел(а)"); }
 }
