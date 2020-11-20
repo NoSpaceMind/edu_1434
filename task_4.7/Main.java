@@ -16,11 +16,10 @@ public class Main {
     }
 }
 
-interface Animal {
-    Color getColor();
-}
-
-abstract class Fox implements Animal{
+class Fox {
+    interface Animal {
+        Color getColor();
+    }
     public String getName() {
         return "Fox";
     }
