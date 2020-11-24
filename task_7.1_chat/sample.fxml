@@ -1,0 +1,41 @@
+//скриншот http://prntscr.com/vosqgo
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextArea fx:id="messageBar" editable="false" prefHeight="366.0" prefWidth="300.0" style="-fx-border-color: #964b00; -fx-background-color: #bd5e0b;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></TextArea>
+      <HBox prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #964b00;">
+         <children>
+            <TextField fx:id="textBar" onAction="#send" prefHeight="25.0" prefWidth="200.0" promptText="Повествуйте радость" style="-fx-background-color: #fad7a2;">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></TextField>
+            <Button mnemonicParsing="false" onAction="#send" prefHeight="30.0" prefWidth="71.0" style="-fx-background-color: #fcecd4;" text="Услать" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe Print Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
